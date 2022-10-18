@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SignUpHeaderImageClipper extends CustomClipper<Path>{
+class LogInHeaderImageClipperer extends CustomClipper<Path>{
   @override
   getClip(Size size) {
     Path myPath=Path();

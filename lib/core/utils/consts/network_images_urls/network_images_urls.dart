@@ -1,0 +1,2 @@
+const String kHeaderImage='https://images.pexels.com/photos/914396/pexels-photo-914396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+const String kSmallLeafImage= "https://www.pngplay.com/wp-content/uploads/2/Green-Leaves-PNG-Photos.png";

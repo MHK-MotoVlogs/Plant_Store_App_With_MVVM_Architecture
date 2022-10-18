@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:plant_store_app/ui/screens/sign_up/sign_up_screen.dart';
+import 'package:plant_store_app/ui/screens/log_in/log_in_screen.dart';
+
 
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SignUp(),
+      home: const LogIn(),
     );
   }
 }
