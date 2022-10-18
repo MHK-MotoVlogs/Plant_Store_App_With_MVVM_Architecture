@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plant_store_app/ui/screens/log_in/log_in_screen.dart';
+import 'package:plant_store_app/ui/screens/signup_page/signup_page_screen.dart';
 
 
 

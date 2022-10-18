@@ -32,23 +32,21 @@ class LogIn extends StatelessWidget {
             ),
             Stack(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Column(
-                      children: [
-                        Text(
-                          'Welcome Back',
-                          style: kHeaderFontStyle,
-                        ),
-                        SizedBox(
-                          height: height * 0.01,
-                        ),
-                        Text(
-                          'Log in to Your Account',
-                          style: kHeaderSubTitleFontStyle,
-                        ),
-                      ],
+                    Text(
+                      'Welcome Back',
+                      style: kHeaderFontStyle,
+                      textAlign: TextAlign.center,
+                    ),
+                    SizedBox(
+                      height: height * 0.01,
+                    ),
+                    Text(
+                      'Log in to Your Account',
+                      style: kHeaderSubTitleFontStyle,
+                      textAlign: TextAlign.center,
                     ),
                   ],
                 ),
