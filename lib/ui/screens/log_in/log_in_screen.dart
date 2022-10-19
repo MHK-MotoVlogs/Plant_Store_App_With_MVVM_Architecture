@@ -32,23 +32,21 @@ class LogIn extends StatelessWidget {
             ),
             Stack(
               children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Column(
-                      children: [
-                        Text(
-                          'Welcome Back',
-                          style: kHeaderFontStyle,
-                        ),
-                        SizedBox(
-                          height: height * 0.01,
-                        ),
-                        Text(
-                          'Log in to Your Account',
-                          style: kHeaderSubTitleFontStyle,
-                        ),
-                      ],
+                    Text(
+                      'Welcome Back',
+                      style: kHeaderFontStyle,
+                      textAlign: TextAlign.center,
+                    ),
+                    SizedBox(
+                      height: height * 0.01,
+                    ),
+                    Text(
+                      'Log in to Your Account',
+                      style: kHeaderSubTitleFontStyle,
+                      textAlign: TextAlign.center,
                     ),
                   ],
                 ),
@@ -65,8 +63,14 @@ class LogIn extends StatelessWidget {
             SizedBox(
               height: height*0.02,
             ),
-            TextFormFields(iconData: Icons.person, hint: 'Full name'),
-            TextFormFields(iconData: Icons.lock, hint: '*****'),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 8),
+              child: TextFormFields(prefixIconData: Icons.person, hint: 'Full name'),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 8),
+              child: TextFormFields(prefixIconData: Icons.lock, hint: '*****'),
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0,horizontal: 20),
               child: Row(
