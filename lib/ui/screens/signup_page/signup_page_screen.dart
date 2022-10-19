@@ -32,7 +32,6 @@ class SignUp extends StatelessWidget {
                       ),
                       Text("Create Your New Account",style: kHeaderSubTitleFontStyle,textAlign: TextAlign.center,),
                     ],
-
                   ),
                   Positioned(
                     right: 0,
@@ -45,10 +44,22 @@ class SignUp extends StatelessWidget {
                 ]
               ),
               SizedBox(height: height*0.06,),
-              TextFormFields(iconData: Icons.person, hint: "Full Name"),
-              TextFormFields(iconData: Icons.mail_sharp, hint: "email@gmail.com"),
-              TextFormFields(iconData: Icons.lock, hint: 'Password'),
-              TextFormFields(iconData: Icons.lock, hint: "Confirm Password"),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 8),
+                child: TextFormFields(prefixIconData: Icons.person, hint: "Full Name"),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 8),
+                child: TextFormFields(prefixIconData: Icons.mail_sharp, hint: "email@gmail.com"),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 8),
+                child: TextFormFields(prefixIconData: Icons.lock, hint: 'Password'),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 8),
+                child: TextFormFields(prefixIconData: Icons.lock, hint: "Confirm Password"),
+              ),
               SizedBox(height: height*0.03,),
               Text.rich(
                   TextSpan(
