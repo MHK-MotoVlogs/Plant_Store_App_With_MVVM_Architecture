@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plant_store_app/ui/screens/home_section/home_section_screen.dart';
 import 'package:plant_store_app/ui/screens/log_in/log_in_screen.dart';
+import 'package:plant_store_app/ui/screens/my_cart/my_cart_screen.dart';
 import 'package:plant_store_app/ui/screens/product_details/product_details_screen.dart';
 import 'package:plant_store_app/ui/screens/signup_page/signup_page_screen.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:ProductDetails(),
+      home:MyCart(),
     );
   }
 }

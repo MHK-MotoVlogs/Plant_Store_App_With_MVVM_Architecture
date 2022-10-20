@@ -80,7 +80,7 @@ class ProductDetails extends StatelessWidget {
                               itemCount: 1,
                               itemBuilder: (context, index) {
 
-                                /// Container having all details of plants
+                                /// Container having all details of plant
 
                                 return Container(
                                   child: Padding(
@@ -165,7 +165,13 @@ class ProductDetails extends StatelessWidget {
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
+
+                                            /// cart button
+
                                             ActionButton(iconData: Icons.shopping_cart, iconColor: kDarkGreen, containerBackgroundColor: kLightSky, dimension: 0.15),
+
+                                            /// buying large button
+
                                           Container(
                                             decoration: BoxDecoration(
                                               color: kDarkGreen,
@@ -173,6 +179,9 @@ class ProductDetails extends StatelessWidget {
                                             ),
                                             child: Padding(
                                               padding: const EdgeInsets.symmetric(horizontal: 60.0,vertical: 16),
+
+                                              /// buying buttton icon and text
+
                                               child: Row(
                                                 children: [
                                                   Icon(Icons.backpack_rounded,color: Colors.white,),

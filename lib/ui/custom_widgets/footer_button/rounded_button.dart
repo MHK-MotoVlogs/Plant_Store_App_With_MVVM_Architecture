@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plant_store_app/ui/custom_widgets/footer_button/large_button_only.dart';
 
 import '../../../core/utils/consts/ui_colors/ui_colors.dart';
 
@@ -14,20 +15,13 @@ class LargeButton extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Container(
-            child: Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: Text(
-                txt,
-                style: TextStyle(color: Colors.white,fontSize: 20.0),
-                textAlign: TextAlign.center,
-              ),
-            ),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(25.0),
-              color: kDarkGreen,
-            ),
-          ),
+
+          /// Button container having text and decoration
+
+          OnlyButton(txt: txt),
+
+          /// Footer Text
+
           Padding(
             padding: const EdgeInsets.only(top: 20.0),
             child: Text.rich(
