@@ -19,12 +19,9 @@ class PlantCard extends StatelessWidget {
 
           ///main stack container
 
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: width*0.7,
-              width: width*0.5,
-            ),
+          Container(
+            height: width*0.7,
+            width: width*0.5,
           ),
 
           /// positioning inner container which container clipper
