@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:plant_store_app/core/models/selling_plant_details_model/plant_details_model.dart';
-import 'package:plant_store_app/core/services/data/plants_data/plants_data.dart';
 import 'package:plant_store_app/core/utils/consts/heading_text_font/heading_text_font.dart';
 import 'package:plant_store_app/core/utils/consts/ui_colors/ui_colors.dart';
 import 'package:plant_store_app/ui/custom_widgets/reusable_increaser_decreaser_button/increaser_decreaser_button.dart';

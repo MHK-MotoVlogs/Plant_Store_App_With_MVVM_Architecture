@@ -148,6 +148,9 @@ class ProductDetails extends StatelessWidget {
                                        child:  ListView(
                                          scrollDirection: Axis.horizontal,
                                          children: [
+
+                                           /// plantFeature class for height, humidity icon and data
+
                                            PlantFeatures(feature: "Height", featureInfo:PlantsData().plantData[0].featuresList["Height"], iconData: Icons.height),
                                            SizedBox(width: width*0.1,),
                                            PlantFeatures(feature: "Humidity", featureInfo: PlantsData().plantData[0].featuresList["Humidity"], iconData: Icons.water_drop),

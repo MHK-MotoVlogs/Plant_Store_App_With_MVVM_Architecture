@@ -7,10 +7,19 @@ class BottomSheetRows extends StatelessWidget {
   String Price;
   @override
   Widget build(BuildContext context) {
+
+    /// Bottom sheet prices row
+
     return  Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
+
+        /// Heading
+
         Text(heading,style: style,),
+
+        /// price
+
         Text("\$ ${Price}",style: style.copyWith(fontWeight: FontWeight.normal),),
       ],
     );

@@ -14,12 +14,27 @@ class LogIn extends StatelessWidget {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
+
+      /// scroll view used to avoid exception of overflow
+
       body: SingleChildScrollView(
+
+        /// Main column
+
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
+
+            /// ClipPath for header image
+
             ClipPath(
+
+              /// LogInHeaderImageClipperer class for CustomCLipPath
+
               clipper: LogInHeaderImageClipperer(),
+
+              /// container wraping header image
+
               child: Container(
                 height: height * 0.4,
                 decoration: BoxDecoration(
@@ -30,11 +45,17 @@ class LogIn extends StatelessWidget {
                 ),
               ),
             ),
+
+            /// Stack for greeting header and subtitle along with leaf image
+
             Stack(
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
+
+                    /// greating Heading
+
                     Text(
                       'Welcome Back',
                       style: kHeaderFontStyle,
@@ -43,6 +64,9 @@ class LogIn extends StatelessWidget {
                     SizedBox(
                       height: height * 0.01,
                     ),
+
+                    /// Subtitle heading
+
                     Text(
                       'Log in to Your Account',
                       style: kHeaderSubTitleFontStyle,
@@ -50,6 +74,9 @@ class LogIn extends StatelessWidget {
                     ),
                   ],
                 ),
+
+                /// positioned leaf image
+
                 Positioned(
                   right: 0,
                   child: Image.network(
@@ -63,33 +90,57 @@ class LogIn extends StatelessWidget {
             SizedBox(
               height: height*0.02,
             ),
+
+            /// TextFormFields class for full name
+
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 8),
               child: TextFormFields(prefixIconData: Icons.person, hint: 'Full name'),
             ),
+
+            /// TextFormFields class for password
+
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 8),
               child: TextFormFields(prefixIconData: Icons.lock, hint: '*****'),
             ),
+
+            /// row having remember me and forgot password buttons
+
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0,horizontal: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+
+                  /// Row for custom checkbox icon and its instruction
+
                 Row(
                   children: [
+
+                    /// custom checkbox
+
                     ClipOval(
                         child: Container(color:kDarkGreen,child: Icon(Icons.check,color: Colors.white,size: 25,))),
                     SizedBox(width: width*0.02,),
+
+                    /// check box instruction
+
                     Text('Remember Me',style: TextStyle(color: kDarkGreen),),
                   ],
                 ),
+
+                /// Text for forget action
+
                 Text("Forget Password ?",style:TextStyle(color: kDarkGreen),),
               ],),
             ),
             SizedBox(
               height: height*0.07,
             ),
+
+            /// Footer action button with instruction
+
             LargeButton(txt: 'Log In',question: "Don't have an account? ",action: "Sign Up",),
           ],
         ),

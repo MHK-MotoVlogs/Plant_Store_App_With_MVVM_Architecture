@@ -5,8 +5,6 @@ import 'package:plant_store_app/core/utils/consts/ui_colors/ui_colors.dart';
 import 'package:plant_store_app/ui/custom_widgets/cart_page_bottom_sheet_rows/bottom_sheet_rows.dart';
 import 'package:plant_store_app/ui/custom_widgets/cart_plant_details_tile/cart_tile.dart';
 import 'package:plant_store_app/ui/custom_widgets/footer_button/large_button_only.dart';
-import 'package:plant_store_app/ui/custom_widgets/footer_button/rounded_button.dart';
-import 'package:plant_store_app/ui/custom_widgets/reusable_increaser_decreaser_button/increaser_decreaser_button.dart';
 import 'package:plant_store_app/ui/custom_widgets/small_action_button/action_button.dart';
 
 class MyCart extends StatelessWidget {
@@ -29,7 +27,7 @@ class MyCart extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
 
-                  /// back button
+                  /// Action button class for back button
 
                 ActionButton(iconData: Icons.arrow_back_ios_new_rounded, iconColor: kDarkGreen, containerBackgroundColor: kTextFieldBackground.withOpacity(0.3), dimension: 0.1),
 

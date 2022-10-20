@@ -80,7 +80,13 @@ class PlantCard extends StatelessWidget {
                       ),
                     ),
                   ),
+
+                  /// clipper for card
+
                   ClipPath(
+
+                    /// class used that extends custom clipper
+
                     clipper: LogInHeaderImageClipperer(),
                     child: Container(
                       decoration: BoxDecoration(
